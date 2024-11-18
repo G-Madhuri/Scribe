@@ -1,0 +1,36 @@
+<div class="row mt-5">
+  <div class="col">
+    <div class="form-group">
+      <label>Post Title</label>
+      <input
+        type="text"
+        class="form-control"
+        id="title"
+        placeholder="Post Title"
+        name="title"
+        [(ngModel)]="title"
+      />
+    </div>
+
+    <div class="form-group">
+      <label>Post Content</label>
+      <div>
+        <textarea
+          id="content"
+          name="content"
+          rows="4"
+          cols="70"
+          [(ngModel)]="content"
+          placeholder="Enter content here..."
+        >
+        </textarea>
+      </div>
+
+      <div class="form-group float-right">
+        <button (click)="createPost()" class="btn btn-warning round">
+          Submit
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
